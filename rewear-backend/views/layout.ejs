@@ -13,5 +13,17 @@
   </main>
 
   <%- include("partials/footer") %>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function() {
+      nav.classList.toggle('active');
+    });
+  }
+});
+</script>
 </body>
 </html>
