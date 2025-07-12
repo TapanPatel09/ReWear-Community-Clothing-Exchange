@@ -24,35 +24,35 @@ const demoItems = [
     description: "Stylish blue denim jacket for casual wear.",
     size: "M",
     category: "Men",
-    imageUrl: "https://source.unsplash.com/300x200/?jacket"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1698260795012-99a7785109d4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Summer Dress",
-    description: "Light floral dress perfect for summer.",
+    description: "Light floral dress perfect for summer outings.",
     size: "S",
     category: "Women",
-    imageUrl: "https://source.unsplash.com/300x200/?dress"
+    imageUrl: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Kid's Hoodie",
-    description: "Comfy and warm hoodie for kids.",
+    description: "Cozy and colorful hoodie for kids.",
     size: "XS",
     category: "Kids",
-    imageUrl: "https://source.unsplash.com/300x200/?hoodie"
+    imageUrl: "https://images.unsplash.com/photo-1701673072655-0b7c89ec2138?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Woolen Scarf",
-    description: "Winter scarf for warmth and style.",
+    description: "Soft wool scarf ideal for winter.",
     size: "Free",
     category: "Accessories",
-    imageUrl: "https://source.unsplash.com/300x200/?scarf"
+    imageUrl: "https://images.unsplash.com/photo-1609803384069-19f3e5a70e75?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    name: "T-shirt",
-    description: "Casual cotton t-shirt for daily wear.",
+    name: "Casual T-shirt",
+    description: "Breathable cotton t-shirt for everyday use.",
     size: "L",
     category: "Men",
-    imageUrl: "https://source.unsplash.com/300x200/?tshirt"
+    imageUrl: "https://images.unsplash.com/photo-1496070527953-98faef8b036f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
