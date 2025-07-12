@@ -22,10 +22,15 @@ app.use(cookieParser());
 require("./config/db")();
 
 // Routes
+app.get("/", (req, res) => {
+    res.send("Welcome to ReWear API");
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/items", itemRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/admin", adminRoutes);
+
 
 // Error Handler
 app.use(errorHandler);
