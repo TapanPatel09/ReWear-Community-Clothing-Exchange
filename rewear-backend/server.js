@@ -30,6 +30,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+const session = require("express-session");
+const passport = require("passport");
+require("./config/passport");
+
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: true
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 // Static Files (CSS, Images)
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -41,9 +54,22 @@ app.set("views", path.join(__dirname, "views"));
 // Connect to MongoDB
 require("./config/db")();
 
+const googleAuthRoutes = require("./routes/googleAuthRoutes");
+app.use(googleAuthRoutes);
+
 // Routes - Frontend Views
 app.use("/", viewRoutes);
-
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) return next();
+  res.redirect("/login");
+}
+app.get("/dashboard", isLoggedIn, (req, res) => {
+  res.render("dashboard", {
+    layout: "layout",
+    title: "Dashboard | ReWear",
+    user: req.user
+  });
+});
 // Routes - Backend APIs
 app.use("/api/auth", authRoutes);
 app.use("/api/items", itemRoutes);
@@ -52,6 +78,8 @@ app.use("/api/admin", adminRoutes);
 
 // Global Error Handler
 app.use(errorHandler);
+
+
 
 // Server Start on Port 8080
 const PORT = 8080;

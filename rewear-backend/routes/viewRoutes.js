@@ -16,4 +16,11 @@ router.get("/register", (req, res) => {
   res.render("register", { layout: "layout", title: "Register | ReWear" });
 });
 
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) return next();
+  res.redirect("/login");
+}
+
+
+
 module.exports = router;

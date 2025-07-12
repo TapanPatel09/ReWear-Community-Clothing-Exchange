@@ -1,0 +1,17 @@
+<% layout = 'layout' %>
+
+<h2>Welcome, <%= user.displayName || user.name || "User" %> 👋</h2>
+
+<p>You are logged in with <%= user.provider || "local account" %>.</p>
+
+<% if (user.emails) { %>
+  <p>Email: <%= user.emails[0].value %></p>
+<% } else if (user.email) { %>
+  <p>Email: <%= user.email %></p>
+<% } %>
+
+<a href="/logout">
+  <button style="margin-top: 1rem; padding: 0.75rem; background-color: #e74c3c; border: none; color: white; border-radius: 4px;">
+    Logout
+  </button>
+</a>
