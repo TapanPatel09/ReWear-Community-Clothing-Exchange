@@ -203,4 +203,57 @@ router.get("/dashboard", async (req, res) => {
   }
 });
 
+router.get("/item/:name", (req, res) => {
+  const itemName = req.params.name;
+  const item = demoItems.find(i => i.name === itemName);
+
+  if (!item) {
+    return res.status(404).render("404", { title: "Item not found", layout: "layout" });
+  }
+
+ res.render("itemDetail", {
+  layout: "layout",
+  title: item.name + " | ReWear",
+  item,
+  demoItems // ✅ Add this line
+});
+
+});
+
+router.get("/user/profile", (req, res) => {
+  // We'll use the globally available res.locals.user
+  const user = res.locals.user;
+
+  if (!user) {
+    return res.redirect("/login");
+  }
+
+  res.render("userProfile", {
+    layout: "layout",
+    title: "My Profile | ReWear",
+    user
+  });
+});
+
+
+// Dummy listings for demo purposes
+const fakeUserListings = demoItems.slice(0, 6);
+const fakeUserPurchases = demoItems.slice(6, 12);
+
+router.get("/user/activity", (req, res) => {
+  if (!res.locals.user) return res.redirect("/login");
+
+  const listings = demoItems.slice(0, 6);     // 🔁 Fake data for listings
+  const purchases = demoItems.slice(6, 12);   // 🔁 Fake data for purchases
+
+  res.render("userActivity", {
+    layout: "layout",
+    title: "My Activity | ReWear",
+    user: res.locals.user,
+    listings,
+    purchases
+  });
+});
+
+
 module.exports = router;

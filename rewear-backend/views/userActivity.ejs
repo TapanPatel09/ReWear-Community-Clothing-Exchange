@@ -1,0 +1,33 @@
+<% layout = 'layout' %>
+
+<h2>👤 <%= user.name %>'s Activity</h2>
+
+<!-- 📦 My Listings Section -->
+<h3>My Listings</h3>
+<div class="card-grid">
+  <% listings.forEach(item => { %>
+    <div class="card">
+      <img src="<%= item.imageUrl %>" />
+      <div class="card-body">
+        <h4><%= item.name %></h4>
+        <p><%= item.description %></p>
+        <p><strong>Size:</strong> <%= item.size %></p>
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+<!-- 🛍️ My Purchases Section -->
+<h3 style="margin-top: 2rem;">My Purchases</h3>
+<div class="card-grid">
+  <% purchases.forEach(item => { %>
+    <div class="card">
+      <img src="<%= item.imageUrl %>" />
+      <div class="card-body">
+        <h4><%= item.name %></h4>
+        <p><%= item.description %></p>
+        <p><strong>Size:</strong> <%= item.size %></p>
+      </div>
+    </div>
+  <% }) %>
+</div>

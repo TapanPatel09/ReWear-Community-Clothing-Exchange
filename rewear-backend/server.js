@@ -57,6 +57,31 @@ require("./config/db")();
 const googleAuthRoutes = require("./routes/googleAuthRoutes");
 app.use(googleAuthRoutes);
 
+const jwt = require("jsonwebtoken");
+
+// Global middleware to expose user to all views
+app.use((req, res, next) => {
+  const token = req.cookies.token;
+
+  if (token) {
+    try {
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+      // Simulate or fetch user data here
+      res.locals.user = {
+        name: "Tapan",
+        avatar: "https://i.pravatar.cc/40?img=3"
+      };
+    } catch (err) {
+      res.locals.user = null;
+    }
+  } else {
+    res.locals.user = null;
+  }
+
+  next();
+});
+
+
 // Routes - Frontend Views
 app.use("/", viewRoutes);
 function isLoggedIn(req, res, next) {

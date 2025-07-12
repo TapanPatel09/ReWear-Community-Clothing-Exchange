@@ -10,7 +10,7 @@
 
 <!-- 🖼️ Banner Image -->
 <div class="banner">
-  <img src="https://source.unsplash.com/1200x400/?fashion,clothing" alt="Fashion Banner" />
+  <img src="https://www.shutterstock.com/image-vector/hurry-special-offer-promotion-banner-260nw-2321334163.jpg" alt="Fashion Banner" />
 </div>
 
 <!-- 🧩 Category Section -->
@@ -25,6 +25,10 @@
   <a href="/dashboard?category=Accessories" class="category-card <%= selectedCategory === 'Accessories' ? 'active' : '' %>">Accessories</a>
 </div>
 
+<div class="dashboard-buttons">
+  <a href="/user/activity" class="btn-jump">📋 My Activity</a>
+
+</div>
 
 <!-- 🛍️ Product Listings -->
 <h3>Available Items</h3>
@@ -34,7 +38,7 @@
     <p>No items found.</p>
   <% } else { %>
     <% items.forEach(item => { %>
-      <div class="card">
+      <a href="/item/<%= encodeURIComponent(item.name) %>" class="card" style="text-decoration: none; color: inherit;">
         <img src="<%= item.imageUrl || 'https://via.placeholder.com/150' %>" alt="Item Image" style="width: 100%; height: 200px; object-fit: cover;" />
         <div class="card-body">
           <h3><%= item.name %></h3>
@@ -42,7 +46,7 @@
           <p><strong>Size:</strong> <%= item.size %></p>
           <p><strong>Category:</strong> <%= item.category %></p>
         </div>
-      </div>
+      </a>
     <% }) %>
   <% } %>
 </div>

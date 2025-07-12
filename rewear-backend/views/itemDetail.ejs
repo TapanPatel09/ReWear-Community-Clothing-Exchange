@@ -1,0 +1,25 @@
+<% layout = 'layout' %>
+
+<div class="item-detail-container">
+  <div class="item-main">
+    <img src="<%= item.imageUrl %>" alt="<%= item.name %>" class="main-image" />
+    <div class="item-info">
+      <h2><%= item.name %></h2>
+      <p><%= item.description %></p>
+      <p><strong>Size:</strong> <%= item.size %></p>
+      <p><strong>Category:</strong> <%= item.category %></p>
+    </div>
+  </div>
+
+  <h3>More Items You May Like</h3>
+  <div class="card-grid">
+    <% demoItems.slice(0, 4).forEach(similar => { %>
+      <div class="card">
+        <img src="<%= similar.imageUrl %>" />
+        <div class="card-body">
+          <h4><%= similar.name %></h4>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>

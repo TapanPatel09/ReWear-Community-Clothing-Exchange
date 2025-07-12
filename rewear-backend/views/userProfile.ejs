@@ -1,0 +1,15 @@
+<% layout = 'layout' %>
+
+ <div class="profile-page">
+        <div class="profile-header">
+            <img src="<%= user.avatar %>" alt="Profile Picture" class="avatar-large" />
+            <div class="profile-info">
+                <h2><%= user.name %></h2>
+                <p><strong>Email:</strong> <%= user.email || "Not available" %></p>
+                <p><strong>Points:</strong> <%= user.points || 0 %></p>
+                <p><strong>Bio:</strong> Eco-conscious fashion lover 🌱</p>
+            </div>
+        </div>
+
+        <a href="/user/edit" class="edit-btn">Edit Profile</a>
+    </div>
