@@ -1,0 +1,20 @@
+<% layout('layout') %>
+
+<a href="/dashboard" style="margin-bottom: 20px; display: inline-block;">← Back to Dashboard</a>
+
+<h2><%= item.name %></h2>
+
+<div style="display: flex; gap: 2rem; margin-top: 20px;">
+  <div style="flex: 1;">
+    <img src="<%= item.imageUrl %>" alt="<%= item.name %>" style="width: 100%; border-radius: 10px;" />
+  </div>
+
+  <div style="flex: 1;">
+    <p><strong>Description:</strong> <%= item.description %></p>
+    <p><strong>Category:</strong> <%= item.category %></p>
+    <p><strong>Size:</strong> <%= item.size || 'N/A' %></p>
+    <p><strong>Condition:</strong> <%= item.condition %></p>
+    <p><strong>Status:</strong> <%= item.status %></p>
+    <p><strong>Points:</strong> <%= item.points %></p>
+  </div>
+</div>
