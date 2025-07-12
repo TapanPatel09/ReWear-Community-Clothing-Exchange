@@ -1,17 +1,45 @@
 <% layout = 'layout' %>
 
-<h2>Welcome, <%= user.displayName || user.name || "User" %> 👋</h2>
+<h2>Welcome to ReWear</h2>
 
-<p>You are logged in with <%= user.provider || "local account" %>.</p>
+<!-- 🔍 Search Bar -->
+<div class="search-bar">
+  <input type="text" placeholder="Search for clothing..." />
+  <button>🔍</button>
+</div>
 
-<% if (user.emails) { %>
-  <p>Email: <%= user.emails[0].value %></p>
-<% } else if (user.email) { %>
-  <p>Email: <%= user.email %></p>
-<% } %>
+<!-- 🖼️ Banner Image -->
+<div class="banner">
+  <img src="https://source.unsplash.com/1200x400/?fashion,clothing" alt="Fashion Banner" />
+</div>
 
-<a href="/logout">
-  <button style="margin-top: 1rem; padding: 0.75rem; background-color: #e74c3c; border: none; color: white; border-radius: 4px;">
-    Logout
-  </button>
-</a>
+<!-- 🧩 Category Section -->
+<h3>Categories</h3>
+<div class="categories">
+  <div class="category-card">Men</div>
+  <div class="category-card">Women</div>
+  <div class="category-card">Kids</div>
+  <div class="category-card">Winter</div>
+  <div class="category-card">Summer</div>
+  <div class="category-card">Accessories</div>
+</div>
+
+<!-- 🛍️ Product Listings -->
+<h3>Available Items</h3>
+<div class="card-grid">
+  <% if (items.length === 0) { %>
+    <p>No items found.</p>
+  <% } else { %>
+    <% items.forEach(item => { %>
+      <div class="card">
+        <img src="<%= item.imageUrl || 'https://via.placeholder.com/150' %>" alt="Item Image" />
+        <div class="card-body">
+          <h3><%= item.name %></h3>
+          <p><%= item.description %></p>
+          <p><strong>Size:</strong> <%= item.size %></p>
+          <p><strong>Category:</strong> <%= item.category %></p>
+        </div>
+      </div>
+    <% }) %>
+  <% } %>
+</div>
