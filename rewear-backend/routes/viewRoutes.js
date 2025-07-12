@@ -25,77 +25,77 @@ const demoItems = [
     description: "Breathable cotton t-shirt for everyday use.",
     size: "L",
     category: "Men",
-    imageUrl: "https://images.unsplash.com/photo-1496070527953-98faef8b036f?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1550504630-cc20eca3b23e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Denim Jacket",
     description: "Stylish blue denim jacket perfect for cool evenings.",
     size: "M",
     category: "Men",
-    imageUrl: "https://images.unsplash.com/photo-1618354691565-cbfa5f1e0f6f?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1698260795012-99a7785109d4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RGVuaW0lMjBKYWNrZXR8ZW58MHx8MHx8fDA%3D"
   },
   {
     name: "Floral Summer Dress",
     description: "Lightweight and comfortable for sunny days.",
     size: "S",
     category: "Women",
-    imageUrl: "https://images.unsplash.com/photo-1583365804383-846a937b83f8?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1652212036934-0d51983f6425?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Kids Hoodie",
     description: "Cozy and colorful hoodie for toddlers.",
     size: "XS",
     category: "Kids",
-    imageUrl: "https://images.unsplash.com/photo-1602810317231-e0ad9893ce84?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1601054704854-1a2e79dda4d3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Wool Scarf",
     description: "Soft wool scarf to keep you warm in winters.",
     size: "Free",
     category: "Accessories",
-    imageUrl: "https://images.unsplash.com/photo-1542060748-10c28b62716e?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1609803384069-19f3e5a70e75?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Kurti Top",
     description: "Ethnic wear top for festive occasions.",
     size: "M",
     category: "Women",
-    imageUrl: "https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1708534246051-7f47b279e94b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Formal Shirt",
     description: "Slim-fit cotton shirt, ideal for office.",
     size: "L",
     category: "Men",
-    imageUrl: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Track Pants",
     description: "Comfortable pants for sports and casual wear.",
     size: "M",
     category: "Men",
-    imageUrl: "https://images.unsplash.com/photo-1626123902231-6f99e37dbe45?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1711175017307-bbacf7c2ca13?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Printed Skirt",
     description: "Floral print skirt for casual outings.",
     size: "S",
     category: "Women",
-    imageUrl: "https://images.unsplash.com/photo-1587837073080-448bc6b7a186?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1649899240929-a19a0dcf02fb?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Wool Beanie",
     description: "Knitted cap to stay warm in winter.",
     size: "Free",
     category: "Accessories",
-    imageUrl: "https://images.unsplash.com/photo-1602810317333-8a23e5f6a727?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1606453914790-b9be7cdb321f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Sports Shoes",
     description: "Running shoes with breathable mesh.",
     size: "10",
     category: "Men",
-    imageUrl: "https://images.unsplash.com/photo-1600180758890-6b94519a8ba0?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Saree",
