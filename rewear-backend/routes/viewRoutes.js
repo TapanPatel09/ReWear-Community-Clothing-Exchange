@@ -102,63 +102,63 @@ const demoItems = [
     description: "Traditional silk saree with gold border.",
     size: "Free",
     category: "Women",
-    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Boy's T-shirt",
     description: "Cartoon-printed cotton t-shirt for kids.",
     size: "S",
     category: "Kids",
-    imageUrl: "https://images.unsplash.com/photo-1611222542365-1c2241df6b14?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1636573563446-5cd9479b75ba?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Sunglasses",
     description: "UV-protected sunglasses for sunny days.",
     size: "Free",
     category: "Accessories",
-    imageUrl: "https://images.unsplash.com/photo-1559561854-ecfbdc168f50?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1502767089025-6572583495f9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dh"
   },
   {
     name: "Ankle Boots",
     description: "Leather boots with comfortable sole.",
     size: "7",
     category: "Women",
-    imageUrl: "https://images.unsplash.com/photo-1603808033190-6fbf6f76b1c1?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1707676179930-b2a8d251288a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Jogger Pants",
     description: "Stylish joggers with elastic fit.",
     size: "M",
     category: "Men",
-    imageUrl: "https://images.unsplash.com/photo-1617634667033-40443fc3dca6?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1715532098035-a343b26eaeaa?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Leather Belt",
     description: "Classic black leather belt for men.",
     size: "Free",
     category: "Accessories",
-    imageUrl: "https://images.unsplash.com/photo-1592878849120-bf4f3f79f321?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1711702362126-cf17f475d825?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Sweater",
     description: "Woolen sweater for chilly evenings.",
     size: "L",
     category: "Women",
-    imageUrl: "https://images.unsplash.com/photo-1605529447592-0fabc19b03fa?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1631541909061-71e349d1f203?q=80&w=705&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Cap",
     description: "Baseball cap with adjustable strap.",
     size: "Free",
     category: "Accessories",
-    imageUrl: "https://images.unsplash.com/photo-1564836235913-44c7552e4f04?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1513105737059-ff0cf0580ae6?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Girl's Dress",
     description: "Colorful dress for kids' parties.",
     size: "XS",
     category: "Kids",
-    imageUrl: "https://images.unsplash.com/photo-1618354691268-f6f171c5e45d?q=80&w=1170&auto=format&fit=crop"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1664373233029-7238db68d0a2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
