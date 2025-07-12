@@ -15,14 +15,16 @@
 
 <!-- 🧩 Category Section -->
 <h3>Categories</h3>
-<div class="categories">
-  <div class="category-card">Men</div>
-  <div class="category-card">Women</div>
-  <div class="category-card">Kids</div>
-  <div class="category-card">Winter</div>
-  <div class="category-card">Summer</div>
-  <div class="category-card">Accessories</div>
+<div class="categories-horizontal">
+  <a href="/dashboard" class="category-card <%= selectedCategory === 'All' ? 'active' : '' %>">All</a>
+  <a href="/dashboard?category=Men" class="category-card <%= selectedCategory === 'Men' ? 'active' : '' %>">Men</a>
+  <a href="/dashboard?category=Women" class="category-card <%= selectedCategory === 'Women' ? 'active' : '' %>">Women</a>
+  <a href="/dashboard?category=Kids" class="category-card <%= selectedCategory === 'Kids' ? 'active' : '' %>">Kids</a>
+  <a href="/dashboard?category=Winter" class="category-card <%= selectedCategory === 'Winter' ? 'active' : '' %>">Winter</a>
+  <a href="/dashboard?category=Summer" class="category-card <%= selectedCategory === 'Summer' ? 'active' : '' %>">Summer</a>
+  <a href="/dashboard?category=Accessories" class="category-card <%= selectedCategory === 'Accessories' ? 'active' : '' %>">Accessories</a>
 </div>
+
 
 <!-- 🛍️ Product Listings -->
 <h3>Available Items</h3>
